@@ -471,6 +471,38 @@ public class ChatServer {
             log("Error al guardar mensaje: " + e.getMessage());
         }
     }
+    // Método público que llama a saveFileOnServer
+    public void storeFile(byte[] file, String fileName, String destination) {
+    saveFileOnServer(file, fileName, destination);
+    }
+    
+    public synchronized void sendFileToUser(String username, String sender, String originalFileName, byte[] file) {
+    PrintWriter out = clients.get(username);
+    if (out != null) {
+        // No generamos un nuevo nombre, usamos el original
+        saveFileOnServer(file, originalFileName, username);
+        String fileMessage = "FILE|" + username + "|" + sender + "|" + originalFileName + "|" 
+                             + Base64.getEncoder().encodeToString(file);
+        out.println(cryptoService.encrypt(fileMessage));
+        logMessage(sender, username, "Archivo enviado: " + originalFileName, file);
+        log("Archivo " + originalFileName + " enviado a " + username + " desde " + sender);
+    }
+    }
+
+    public synchronized void sendFileToChannel(String channel, String sender, String originalFileName, byte[] file) {
+        Set<PrintWriter> channelClients = channels.getOrDefault(channel, new HashSet<>());
+        String fileMessage = "FILE|#" + channel + "|" + sender + "|" + originalFileName + "|" 
+                             + Base64.getEncoder().encodeToString(file);
+        // Guardamos el archivo usando el nombre original
+        saveFileOnServer(file, originalFileName, "#" + channel);
+        for (PrintWriter client : channelClients) {
+            client.println(cryptoService.encrypt(fileMessage));
+        }
+        logMessage(sender, "#" + channel, "Archivo enviado: " + originalFileName, file);
+        log("Archivo " + originalFileName + " enviado al canal #" + channel + " desde " + sender);
+    }
+
+
 
     private void saveFileOnServer(byte[] file, String fileName, String destination) {
         File dir = new File("server_files" + File.separator + destination.replace("#", "channel_"));

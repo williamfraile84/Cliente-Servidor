@@ -13,11 +13,6 @@
     <dependencies>
         <dependency>
             <groupId>com.mycompany</groupId>
-            <artifactId>ConfigLoaderProject</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.mycompany</groupId>
             <artifactId>DatabaseProject</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
@@ -37,6 +32,11 @@
             <groupId>org.mindrot</groupId>
             <artifactId>jbcrypt</artifactId>
             <version>0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>ConfigLoaderProject</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
     <build>

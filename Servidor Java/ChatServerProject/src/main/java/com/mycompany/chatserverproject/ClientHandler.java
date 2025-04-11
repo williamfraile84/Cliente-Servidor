@@ -111,17 +111,20 @@ public class ClientHandler implements Runnable {
                 server.sendToUser(destination, username + ":" + msg, null);
             }
         } else if (message.startsWith("FILE|")) {
-            String[] parts = message.split("\\|", 4);
-            if (parts.length < 4) return;
+            String[] parts = message.split("\\|", 5);
+            if (parts.length < 5) return;
+
             String destination = parts[1];
-            String fileName = parts[2];
-            String encodedFile = parts[3];
+            String sender = parts[2];
+            String fileName = parts[3]; // Aquí se conserva el nombre original
+            String encodedFile = parts[4];
             byte[] file = Base64.getDecoder().decode(encodedFile);
+
             if (destination.startsWith("#")) {
                 String channel = destination.substring(1);
-                server.sendToChannel(channel, "Archivo enviado: " + fileName, username, file);
+                server.sendFileToChannel(channel, sender, fileName, file);
             } else {
-                server.sendToUser(destination, username + ":Archivo enviado: " + fileName, file);
+                server.sendFileToUser(destination, sender, fileName, file);
             }
         } else if (message.startsWith("GET_ONLINE_USERS")) {
             server.sendOnlineUsers(out);

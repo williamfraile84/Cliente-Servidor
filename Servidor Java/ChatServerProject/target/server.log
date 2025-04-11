@@ -1,62 +1,52 @@
-abr 06, 2025 7:34:32 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 7:55:18 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Servidor iniciado en puerto 5000
-abr 06, 2025 7:34:40 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Nuevo cliente conectado: /192.168.0.3
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:24 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Nuevo cliente conectado: /192.168.80.15
+abr 10, 2025 8:35:33 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Intento de autenticación para pepe: Éxito
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:33 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de usuarios en línea actualizada para todos los clientes
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:33 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de todos los canales actualizada para todos los clientes
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:33 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Cliente pepe se ha conectado.
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:33 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de usuarios registrados enviada a pepe
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:33 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de usuarios en línea enviada a pepe
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:34 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de canales unidos enviada a pepe
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:34 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de todos los canales enviada a pepe
-abr 06, 2025 7:34:47 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:35:34 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Foto de perfil enviada a pepe
-abr 06, 2025 7:35:05 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Nuevo cliente conectado: /192.168.0.3
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Intento de autenticación para maria: Éxito
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:43:14 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de usuarios en línea actualizada para todos los clientes
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:43:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Cliente desconectado: pepe
+abr 10, 2025 8:44:48 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Servidor iniciado en puerto 5000
+abr 10, 2025 8:45:08 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Nuevo cliente conectado: /192.168.80.15
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Intento de autenticación para pepe: Éxito
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Lista de usuarios en línea actualizada para todos los clientes
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de todos los canales actualizada para todos los clientes
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Cliente maria se ha conectado.
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Lista de usuarios registrados enviada a maria
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Lista de usuarios en línea enviada a maria
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Lista de canales unidos enviada a maria
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Lista de todos los canales enviada a maria
-abr 06, 2025 7:35:22 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Foto de perfil enviada a maria
-abr 06, 2025 7:35:28 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Historial del canal #prueba enviado a maria
-abr 06, 2025 7:35:35 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Mensaje enviado al canal #prueba desde maria: prueba
-abr 06, 2025 7:35:38 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Historial del canal #prueba enviado a pepe
-abr 06, 2025 7:35:41 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Mensaje enviado al canal #prueba desde pepe: jj
-abr 06, 2025 7:35:45 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Historial del chat con maria enviado a pepe
-abr 06, 2025 7:35:52 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Mensaje enviado a maria desde pepe: h
-abr 06, 2025 7:35:59 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Cliente pepe se ha conectado.
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Lista de usuarios registrados enviada a pepe
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Lista de usuarios en línea enviada a pepe
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Lista de canales unidos enviada a pepe
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Lista de todos los canales enviada a pepe
+abr 10, 2025 8:45:14 P. M. com.mycompany.chatserverproject.ChatServer log
+INFO: Foto de perfil enviada a pepe
+abr 10, 2025 8:47:07 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Lista de usuarios en línea actualizada para todos los clientes
-abr 06, 2025 7:35:59 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Cliente desconectado: maria
-abr 06, 2025 7:36:00 A. M. com.mycompany.chatserverproject.ChatServer log
-INFO: Lista de usuarios en línea actualizada para todos los clientes
-abr 06, 2025 7:36:00 A. M. com.mycompany.chatserverproject.ChatServer log
+abr 10, 2025 8:47:07 P. M. com.mycompany.chatserverproject.ChatServer log
 INFO: Cliente desconectado: pepe
